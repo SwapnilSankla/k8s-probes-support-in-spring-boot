@@ -5,7 +5,9 @@ Mongo probe is just a configuration. Wrote a custom probe for kafka. We can add 
 ### Endpoints:
 
 http://localhost:8080/actuator/health
+
 http://localhost:8080/actuator/health/liveness
+
 http://localhost:8080/actuator/health/readiness
 
 ### Configuration:
