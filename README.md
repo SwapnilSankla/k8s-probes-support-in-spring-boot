@@ -11,14 +11,20 @@ http://localhost:8080/actuator/health/readiness
 ### Configuration:
 
 #### Enable probes:
+```kotlin
 management.endpoint.health.probes.enabled=true
 management.endpoint.health.show-details=always
 management.health.livenessstate.enabled=true
 management.health.readinessstate.enabled=true
+```
 
 #### Configure probes:
+```kotlin
 management.endpoint.health.group.liveness.include=livenessProbe,kafkaProbe,mongo
-management.endpoint.health.group.readiness.include==readinessProbe,kafkaProbe,mongo
+management.endpoint.health.group.readiness.include=readinessProbe,kafkaProbe,mongo
+```
 
 #### Enable Mongo health
+```kotlin
 management.health.mongo.enabled=true
+```
